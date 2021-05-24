@@ -1,0 +1,65 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "wangzhipengdeMacBook-Pro.local",
+    "children" : [ {
+      "name" : "4998-MainThread",
+      "children" : [ {
+        "name" : "测试数据：【 22091000659974, 1, 1001, 1, True, 0, success】",
+        "uid" : "9ec6b0cf600a2a6a",
+        "parentUid" : "f4ab92548171e7e82200ff6fac6f27df",
+        "status" : "broken",
+        "time" : {
+          "start" : 1621844062309,
+          "stop" : 1621844062310,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'22091000659974'", "0", "'success'", "True", "1001", "1", "1" ]
+      }, {
+        "name" : "测试数据：【 22091000659974, 1001, 1, True, 0, success】",
+        "uid" : "1a2bb987feb5bcfd",
+        "parentUid" : "f4ab92548171e7e82200ff6fac6f27df",
+        "status" : "broken",
+        "time" : {
+          "start" : 1621844062364,
+          "stop" : 1621844062365,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'22091000659974'", "0", "'success'", "True", "1001", "1" ]
+      }, {
+        "name" : "测试数据：【 True，0，177】",
+        "uid" : "9855cd067e6d3232",
+        "parentUid" : "f4ab92548171e7e82200ff6fac6f27df",
+        "status" : "passed",
+        "time" : {
+          "start" : 1621844062177,
+          "stop" : 1621844062200,
+          "duration" : 23
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0", "'177'", "True" ]
+      }, {
+        "name" : "测试数据：【 22091000659974, 1, 1001, 1, True, 0, success】",
+        "uid" : "4dfd9a5035267587",
+        "parentUid" : "f4ab92548171e7e82200ff6fac6f27df",
+        "status" : "broken",
+        "time" : {
+          "start" : 1621844062205,
+          "stop" : 1621844062207,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'22091000659974'", "0", "'success'", "True", "1001", "1", "1" ]
+      } ],
+      "uid" : "f4ab92548171e7e82200ff6fac6f27df"
+    } ],
+    "uid" : "519d3d2269881ed31554cd21d35c868d"
+  } ]
+}

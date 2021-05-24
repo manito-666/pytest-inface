@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon May 24 16:14:22 CST 2021","Mon May 24 16:14:22 CST 2021","23","testcases.api_test","test_00_login","Test_Login","","","测试数据：【 True，0，177】","该用例是针对获取用户登录接口的测试"
+"broken","Mon May 24 16:14:22 CST 2021","Mon May 24 16:14:22 CST 2021","2","testcases.api_test","test_01_refuse","Test_Refuse","","","测试数据：【 22091000659974, 1, 1001, 1, True, 0, success】","该用例是针对获取帖子评论接口的测试"
+"broken","Mon May 24 16:14:22 CST 2021","Mon May 24 16:14:22 CST 2021","1","testcases.api_test","test_02_allow","Test_Allow","","","测试数据：【 22091000659974, 1, 1001, 1, True, 0, success】","该用例是针对获取帖子评论接口的测试"
+"broken","Mon May 24 16:14:22 CST 2021","Mon May 24 16:14:22 CST 2021","1","testcases.api_test","test_03_home","Test_Home","","","测试数据：【 22091000659974, 1001, 1, True, 0, success】","该用例是针对设置帖子为首页接口的测试"
