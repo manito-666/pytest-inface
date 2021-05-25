@@ -40,5 +40,3 @@ class Test_Allow():
         log.info("*************** 结束执行用例 ***************")
 
 
-if __name__ == '__main__':
-    pytest.main(["-q", "-s", "test_02_allow.py"])

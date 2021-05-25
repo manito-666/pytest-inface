@@ -39,6 +39,3 @@ class Test_Home():
         assert except_msg in result.msg
         log.info("*************** 结束执行用例 ***************")
 
-
-if __name__ == '__main__':
-    pytest.main(["-q", "-s", "test_03_home.py"])

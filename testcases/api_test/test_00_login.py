@@ -25,7 +25,7 @@ class Test_Login():
     @pytest.mark.single
     @pytest.mark.parametrize("except_result, except_code, except_msg", api_data["test_login_user"])
 
-    def test_login_user(self,except_result, except_code, except_msg):
+    def test_login_user(self, except_result, except_code, except_msg):
         log.info("*************** 开始执行用例 ***************")
         result = login_user()
         step_1("获取token")
@@ -37,6 +37,3 @@ class Test_Login():
         assert except_msg in result.msg
         log.info("*************** 结束执行用例 ***************")
 
-
-if __name__ == '__main__':
-    pytest.main(["-q", "-s", "test_00_login.py"])

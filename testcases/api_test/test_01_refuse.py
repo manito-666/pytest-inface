@@ -40,8 +40,4 @@ class Test_Refuse():
         log.info("*************** 结束执行用例 ***************")
 
 
-if __name__ == '__main__':
-    pytest.main(["-q", "-s", "test_01_refuse.py"])
-    # pytest.main(["-s", "-q", "--alluredir=./report"])
-    # os.popen("allure generate report/ -o result/ --clean")
 
