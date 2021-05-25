@@ -1,8 +1,11 @@
 #coding=utf-8
-import os,sys,json,requests
+import os,sys
 from core.result_base import ResultBase
 from api.user import user
-from common.logger import logger
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(curPath)[0]
+sys.path.append(rootPath)
+from common.logger import log
 
 from core .rest_client import RestClient as R
 
@@ -24,7 +27,7 @@ def login_user():
         result.error = "接口返回码是 【 {} 】, 返回信息：{} ".format(res.json()["error"], res.json()["info"]["uid"])
     result.msg = res.json()["info"]["uid"]
     result.response = res
-    logger.info("登录用户 ==>> 返回结果 ==>> {}".format(result.response.json()))
+    log.info("登录用户 ==>> 返回结果 ==>> {}".format(result.response.json()))
     return result
 
 
@@ -50,7 +53,7 @@ def refuse_user(article_id, value, game_id, language):
         result.success = " 禁止评论帖子==>> 接口返回码是 【 {} 】, 返回信息：{} ".format(rep.json()["error_code"], rep.json()["error_msg"])
     result.msg = rep.json()["error_msg"]
     result.response = rep
-    logger.info("禁止评论帖子 ==>> 返回结果 ==>> {}".format(result.response.json()))
+    log.info("禁止评论帖子 ==>> 返回结果 ==>> {}".format(result.response.json()))
     return result
 
 
@@ -72,7 +75,7 @@ def allow_user(article_id, value, game_id, language):
         result.success = " 允许评论帖子==>> 接口返回码是 【 {} 】, 返回信息：{} ".format(res.json()["error_code"], res.json()["error_msg"])
     result.msg = res.json()["error_msg"]
     result.response = res
-    logger.info("允许评论帖子 ==>> 返回结果 ==>> {}".format(result.response.json()))
+    log.info("允许评论帖子 ==>> 返回结果 ==>> {}".format(result.response.json()))
 
 
 def home_page(article_id, game_id, language):
@@ -89,11 +92,6 @@ def home_page(article_id, game_id, language):
         result.success = " 帖子设置为首页==>> 接口返回码是 【 {} 】, 返回信息：{} ".format(rep.json()["error_code"], rep.json()["error_msg"])
     result.msg = rep.json()["error_msg"]
     result.response = rep
-    logger.info("帖子设置为首页 ==>> 返回结果 ==>> {}".format(result.response.json()))
+    log.info("帖子设置为首页 ==>> 返回结果 ==>> {}".format(result.response.json()))
     return result
 
-# if __name__ == '__main__'
-    # login_user()
-    # refuse_user(36102083149830, 1, 1001, 1)
-    # home_page(36103975796738, 1001, 1)
-    allow_user(36102083149830, 0, 1001, 1)

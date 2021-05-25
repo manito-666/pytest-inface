@@ -2,7 +2,11 @@
 import yaml
 import json,os,sys
 from configparser import ConfigParser
-from common.logger import logger
+
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(curPath)[0]
+sys.path.append(rootPath)
+from common.logger import log
 
 
 class MyConfigParser(ConfigParser):
@@ -17,22 +21,22 @@ class ReadFileData():
 
     #读取yaml参数
     def load_yaml(self, file_path):
-        logger.info("加载 {} 文件......".format(file_path))
+        log.info("加载 {} 文件......".format(file_path))
         with open(file_path, encoding='utf-8') as f:
             data = yaml.safe_load(f)
-        logger.info("读到数据 ==>>  {} ".format(data))
+        log.info("读到数据 ==>>  {} ".format(data))
         return data
 
     #把文件中参数转化为json格式
     def load_json(self, file_path):
-        logger.info("加载 {} 文件......".format(file_path))
+        log.info("加载 {} 文件......".format(file_path))
         with open(file_path, encoding='utf-8') as f:
             data = json.dumps(f)
-        logger.info("读到数据 ==>>  {} ".format(data))
+        log.info("读到数据 ==>>  {} ".format(data))
         return data
     #读取配置文件
     def load_ini(self, file_path):
-        logger.info("加载 {} 文件......".format(file_path))
+        log.info("加载 {} 文件......".format(file_path))
         config = MyConfigParser()
         config.read(file_path, encoding="UTF-8")
         data = dict(config._sections)

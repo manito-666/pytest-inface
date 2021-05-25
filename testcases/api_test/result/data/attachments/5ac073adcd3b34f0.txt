@@ -1,8 +1,0 @@
-INFO     log:test_01_refuse.py:28 *************** 开始执行用例 ***************
-INFO     log:rest_client.py:53 接口请求地址 ==>> http://testgo.dhgames.cn/forum_b_api_cn_v1/content/article/attr_comment_refuse
-INFO     log:rest_client.py:54 接口请求方式 ==>> POST
-INFO     log:rest_client.py:56 接口请求头 headers参数 ==>> {"Content-Type": "application/json", "Authorization": "d513d48c-3902-4756-8696-4b8b165438a6"}
-INFO     log:rest_client.py:57 接口请求 params 参数 ==>> None
-INFO     log:rest_client.py:58 接口请求体 data 参数 ==>> {"article_id": "22091000659974", "value": 1, "game_id": 1001, "language": 1}
-INFO     log:rest_client.py:59 接口上传附件 files 参数 ==>> None
-INFO     log:rest_client.py:60 接口 cookies 参数 ==>> null

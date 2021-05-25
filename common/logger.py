@@ -1,5 +1,9 @@
 #coding=utf-8
-import logging, time, os
+import os,sys
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(curPath)[0]
+sys.path.append(rootPath)
+import logging, time
 
 BASE_PATH = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 # 定义日志文件路径
@@ -28,6 +32,6 @@ class Logger():
         self.logger.addHandler(self.console)
 
 
-logger = Logger().logger
+log = Logger().logger
 
 

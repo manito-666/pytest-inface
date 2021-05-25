@@ -1,18 +1,21 @@
 # coding:utf-8
-import smtplib
+import smtplib,os,sys
 import time
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from common.logger import Logger
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(curPath)[0]
+sys.path.append(rootPath)
+from common.logger import log
 from config.allpath import reprort_path
-import sys,os
+
 
 Path = os.path.abspath(os.path.dirname(__file__))
 rootPath = os.path.split(Path)[0]
 sys.path.append(rootPath)
 # 测试报告的路径
 reportPath = reprort_path
-logger = Logger()
+log = log()
 # 配置收发件人
 recvaddress = ['18599936472@163.com',]
 # 163的用户名和密码
@@ -65,10 +68,10 @@ class SendMail:
             smtp = smtplib.SMTP('smtp.163.com', 25)
             smtp.login(sendaddr_name, sendaddr_pswd)
             smtp.sendmail(self.msg['from'], self.sendTo, self.msg.as_string())
-            logger.info("发送邮件成功")
+            log.info("发送邮件成功")
             smtp.close()
         except:
-            logger.error('发送邮件失败')
+            log.error('发送邮件失败')
 
 
 if __name__ == '__main__':

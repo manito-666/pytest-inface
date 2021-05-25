@@ -1,9 +1,12 @@
 
 #coding=utf-8
-import requests,json
+import requests,json,os,sys
 import json as complexjson
-from common.logger import logger
-from common.read_data import ReadFileData
+curPath = os.path.abspath(os.path.dirname(__file__))
+rootPath = os.path.split(curPath)[0]
+sys.path.append(rootPath)
+from common.logger import log
+
 
 class RestClient():
 
@@ -50,13 +53,13 @@ class RestClient():
             return requests.delete(url, **kwargs)
 
     def request_log(self, url, method, data=None,  params=None, headers=None, files=None, cookies=None, **kwargs):
-        logger.info("接口请求地址 ==>> {}".format(url))
-        logger.info("接口请求方式 ==>> {}".format(method))
+        log.info("接口请求地址 ==>> {}".format(url))
+        log.info("接口请求方式 ==>> {}".format(method))
         # Python3中，json在做dumps操作时，会将中文转换成unicode编码，因此设置 ensure_ascii=False
-        logger.info("接口请求头 headers参数 ==>> {}".format(headers,ensure_ascii=False))
-        logger.info("接口请求 params 参数 ==>> {}".format(params,ensure_ascii=False))
-        logger.info("接口请求体 data 参数 ==>> {}".format(data,ensure_ascii=False))
-        logger.info("接口上传附件 files 参数 ==>> {}".format(files,ensure_ascii=False))
-        logger.info("接口 cookies 参数 ==>> {}".format(complexjson.dumps(cookies, indent=4, ensure_ascii=False)))
+        log.info("接口请求头 headers参数 ==>> {}".format(headers,ensure_ascii=False))
+        log.info("接口请求 params 参数 ==>> {}".format(params,ensure_ascii=False))
+        log.info("接口请求体 data 参数 ==>> {}".format(data,ensure_ascii=False))
+        log.info("接口上传附件 files 参数 ==>> {}".format(files,ensure_ascii=False))
+        log.info("接口 cookies 参数 ==>> {}".format(complexjson.dumps(cookies, indent=4, ensure_ascii=False)))
 
 
