@@ -1,0 +1,77 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "testcases.api_test",
+    "children" : [ {
+      "name" : "test_00_login",
+      "children" : [ {
+        "name" : "测试数据：【 True，0，634】",
+        "uid" : "61215c9e0cbcbe4f",
+        "parentUid" : "fd6ee862ba2d09c6bdb481d7aab12823",
+        "status" : "passed",
+        "time" : {
+          "start" : 1621910916937,
+          "stop" : 1621910916991,
+          "duration" : 54
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0", "'634'", "True" ]
+      } ],
+      "uid" : "fd6ee862ba2d09c6bdb481d7aab12823"
+    }, {
+      "name" : "test_01_refuse",
+      "children" : [ {
+        "name" : "测试数据：【 36101999656968, 1, 1001, 1, True, 0, success】",
+        "uid" : "6c364ec8e16ceee5",
+        "parentUid" : "11ac2dac2ba379a72944d652fa2ca895",
+        "status" : "passed",
+        "time" : {
+          "start" : 1621910916996,
+          "stop" : 1621910917021,
+          "duration" : 25
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "36101999656968", "0", "'success'", "True", "1001", "1", "1" ]
+      } ],
+      "uid" : "11ac2dac2ba379a72944d652fa2ca895"
+    }, {
+      "name" : "test_02_allow",
+      "children" : [ {
+        "name" : "测试数据：【 36101999656968, 1, 1001, 1, True, 0, success】",
+        "uid" : "83ac40579b3b6578",
+        "parentUid" : "26924b197348df5d06a3174c8f915791",
+        "status" : "broken",
+        "time" : {
+          "start" : 1621910917027,
+          "stop" : 1621910917057,
+          "duration" : 30
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "36101999656968", "0", "'success'", "True", "1001", "1", "1" ]
+      } ],
+      "uid" : "26924b197348df5d06a3174c8f915791"
+    }, {
+      "name" : "test_03_home",
+      "children" : [ {
+        "name" : "测试数据：【 36103975796738, 1001, 1, True, 0, success】",
+        "uid" : "7b2b02617fd012c2",
+        "parentUid" : "61fcbfc120fd29e476ac491955c8faac",
+        "status" : "passed",
+        "time" : {
+          "start" : 1621910917121,
+          "stop" : 1621910917150,
+          "duration" : 29
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "36103975796738", "0", "'success'", "True", "1001", "1" ]
+      } ],
+      "uid" : "61fcbfc120fd29e476ac491955c8faac"
+    } ],
+    "uid" : "testcases.api_test"
+  } ]
+}

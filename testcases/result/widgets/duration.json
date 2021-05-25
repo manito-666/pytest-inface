@@ -1,0 +1,41 @@
+[ {
+  "uid" : "6c364ec8e16ceee5",
+  "name" : "测试数据：【 36101999656968, 1, 1001, 1, True, 0, success】",
+  "time" : {
+    "start" : 1621910916996,
+    "stop" : 1621910917021,
+    "duration" : 25
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "83ac40579b3b6578",
+  "name" : "测试数据：【 36101999656968, 1, 1001, 1, True, 0, success】",
+  "time" : {
+    "start" : 1621910917027,
+    "stop" : 1621910917057,
+    "duration" : 30
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "7b2b02617fd012c2",
+  "name" : "测试数据：【 36103975796738, 1001, 1, True, 0, success】",
+  "time" : {
+    "start" : 1621910917121,
+    "stop" : 1621910917150,
+    "duration" : 29
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "61215c9e0cbcbe4f",
+  "name" : "测试数据：【 True，0，634】",
+  "time" : {
+    "start" : 1621910916937,
+    "stop" : 1621910916991,
+    "duration" : 54
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

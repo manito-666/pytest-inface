@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "AttributeError: 'ResultBase' object has no attribute 'error'",
+      "children" : [ {
+        "name" : "测试数据：【 36101999656968, 1, 1001, 1, True, 0, success】",
+        "uid" : "83ac40579b3b6578",
+        "parentUid" : "585e6cb45997dff1fc7a0b2590337adc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1621910917027,
+          "stop" : 1621910917057,
+          "duration" : 30
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "36101999656968", "0", "'success'", "True", "1001", "1", "1" ]
+      } ],
+      "uid" : "585e6cb45997dff1fc7a0b2590337adc"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}
