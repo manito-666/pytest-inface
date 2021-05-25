@@ -9,5 +9,5 @@ PATH = os.path.split(os.path.realpath(__file__))[0]
 failureException = AssertionError
 if __name__ == '__main__':
     log.info("%s --alluredir=./report" % case_path)
-    pytest.main(["-s", "-q", "--alluredir=./report"])
+    pytest.main(["-s", "-q", "--alluredir=testcases/report"])
     os.popen("allure generate report/ -o result/ --clean")
