@@ -4,10 +4,10 @@ test_login_user:
 
 test_refuse_user:
   # article_id, value, game_id, language, 期望结果, 期望返回码, 期望返回信息
-   - [36102083149830, 1, 1001, 1, True, 0, "success"]
+   - [36101999656968, 1, 1001, 1, True, 0, "success"]
 test_allow_user:
   # article_id, value, game_id, language, 期望结果, 期望返回码, 期望返回信息
-   - [36103975796738, 0, 1001, 1, True, 0, "success"]
+   - [36102083149830, 0, 1001, 1, True, 0, "success"]
 test_home_page:
    #article_id, game_id, language, 期望结果, 期望返回码, 期望返回信息
    - [36103975796738, 1001, 1, True, 0, "success"]
